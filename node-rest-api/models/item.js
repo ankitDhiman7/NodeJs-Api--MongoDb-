@@ -9,6 +9,7 @@ const itemSchema = new mongoose.Schema(
 );
 
 //itemSchema.plugin(mongooseSequence(mongoose), { inc_field: 'itemid' });
+
 const itemModel = mongoose.model("item", itemSchema);
 
 module.exports = itemModel;
