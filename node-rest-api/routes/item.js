@@ -2,6 +2,7 @@ const express = require("express");
 const itemModel = require("../models/item");
 const router = express.Router();
 
+/*==== GET : /item =====*/
 router.get("/", async (req, res) => {
   try {
     const items = await itemModel.find();
